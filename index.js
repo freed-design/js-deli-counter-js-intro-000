@@ -14,3 +14,15 @@ var nowServing = (katzDeliLine) => {
     return `Currently serving ${holder}.`
   }
 }
+
+var currentLine = (katzDeliLine) => {
+  var stringReturn = "The line is currently: "
+  if (katzDeliLine.length === 0) {
+    return "The line is currently empty."
+  } else {
+    for (var n = 0; n < katzDeliLine.length; n++) {
+      stringReturn += `${n+1}. ${katzDeliLine[n]}, `
+    }
+    return stringReturn;
+  }
+}
