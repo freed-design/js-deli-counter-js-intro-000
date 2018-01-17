@@ -24,7 +24,7 @@ var currentLine = (katzDeliLine) => {
       stringReturn += `${n+1}. ${katzDeliLine[n]}, `
     }
     stringReturn += `${n+1}. ${katzDeliLine[n]}`
-    
+
     return stringReturn;
   }
 }
